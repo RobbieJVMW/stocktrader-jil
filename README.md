@@ -142,7 +142,7 @@ We are set to use external db2 server.
 1. Install Redis using the [default_redis_values.yaml](installation/default_redis_values.yaml) file:
 
 ```
-$ helm install -n st-redis --namespace stocktrader stable/redis -f installation/default_redis_values.yaml
+$ helm install -n st-redis --namespace stocktrader stable/redis -f installation/default_redis_values.yaml --generate-name
 ```
 
 **IMPORTANT:** The Redis instance installed is a non-persistent non-HA Redis deployment
